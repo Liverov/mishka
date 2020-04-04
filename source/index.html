@@ -12,18 +12,25 @@
       </a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
           </li>
         </ul>
+
+        <form class="site-list__item site-list__item--search" action="https://echo.htmlacademy.ru">
+          <input type="text" name="" id="" placeholder="Поиск по сайту">
+        </form>
+
+        <div class="site-list__item site-list__item--cart">
+            <a href="#">Корзина: пока пуста</a>
+        </div>
+
+
       </nav>
     </header>
 
@@ -45,13 +52,13 @@
         </ul>
       </section>
 
-      <section class="product-week product">
+      <section class="product">
         <h2 class="product__title">Вязаные корзинки</h2>
         <p class="product__subtitle">Товар недели</p>
         <p class="product__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
         </p>
-        <table class="product__features">
+        <table class="product__params">
           <tr>
             <td class="product__field">Цвет:</td>
             <td class="product__value">«Тиффани»/серый</td>
@@ -67,24 +74,24 @@
         </table>
         <img class="product__image" src="img/triple-set-mobile.png" width="260" height="315" alt="Три вязаные корзинки. Цвет: «Тиффани»/серый Диаметр: 25см Высота: 15см" />
         <p class="product__price">Цена 990 руб.</p>
-        <button class="button button__order" type="button">Заказать</button>
+        <a class="button button__order" href="#">Заказать</a>
       </section>
 
       <section class="about">
         <h2>Коротко о нас:</h2>
         <ul class="about-list">
-          <li class="about-list__item">Экологически чисые материалы</li>
-          <li class="about-list__item">Скандинавский стиль по российской цене</li>
-          <li class="about-list__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-list__item">Связано вручную с любовью и умилением</li>
-          <li class="about-list__item">Поддержка отечественного производителя</li>
-          <li class="about-list__item">Поставляется в подарочной упаковке</li>
+          <li class="about-list__item about-list__item--icon-1">Экологически чисые материалы</li>
+          <li class="about-list__item about-list__item--icon-2">Скандинавский стиль по российской цене</li>
+          <li class="about-list__item about-list__item--icon-3">Увеличивает лайки на фотографиях</li>
+          <li class="about-list__item about-list__item--icon-4">Связано вручную с любовью и умилением</li>
+          <li class="about-list__item about-list__item--icon-5">Поддержка отечественного производителя</li>
+          <li class="about-list__item about-list__item--icon-6">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
       <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -94,10 +101,14 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--back" type="button"></button>
-          <button class="slider__toggle slider__toggle--next" type="button"></button>
+          <button class="slider__toggle slider__toggle--back" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="slider__toggle slider__toggle--next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
         </p>
-        <button class="reviews__write button">Написать</button>
+        <a class="reviews__write button" href="#">Написать</a>
       </section>
 
       <section class="contacts">
@@ -105,7 +116,7 @@
         <p class="contacts__title">Контакты</p>
         <div class="contacts__email">
           <span class="contacts__label">e-mail:</span>
-          <span class="contacts__value">
+          <span class="contacts__value contacts__value--underline">
             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </span>
         </div>
@@ -118,18 +129,18 @@
           </span>
         </div>
         <img class="contacts__map" src="img/map-mobile-1-x.png" alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <button class="contacts__write button" type="button">Напишите нам</button>
+        <a class="contacts__write button" href="#">Напишите нам</a>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <ul class="social__list">
+      <ul class="page-footer__social social">
         <li class="social__item social__item--instagramm">Instagramm</li>
         <li class="social__item social__item--facebook">Facebbok</li>
         <li class="social__item social__item--twitter">Twitter</li>
       </ul>
-      <div class="developer">
+      <div class="page-footer__developer developer">
         <p class="developer__title">Разработано</p>
         <div class="developer__logo"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></div>
       </div>
