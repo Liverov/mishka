@@ -7,28 +7,22 @@
   <body>
 
     <header class="page-header">
-
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/mobile-logotype.svg" width="86" height="35" alt="Интернет-магазин вещей ручной работы - Мишка" />
       </a>
-
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
       <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
           </li>
         </ul>
+        <a class="main-nav__search main-nav__search--icon" href="#">Поиск по сайту</a>
+        <a class="main-nav__cart main-nav__cart--icon" href="#">Корзина: пока пуста</a>
       </nav>
-
     </header>
 
     <main class="page-main page-main--catalog">
@@ -41,22 +35,28 @@
         <h2 class="visually-hidden">Карточки наших товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-            <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+            <a class="catalog__item--link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+            </a>
             <p class="catalog__params">Рост 30 см, вес 200 г</p>
             <span class="catalog__price">1 200 руб.</span>
             <a class="catalog__order"><span class="visuall-hidden">Купить</span></a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-            <h3 class="catalog__title">Корзинка для белья</h3>
+            <a class="catalog__item--link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__title">Корзинка для белья</h3>
+            </a>
             <p class="catalog__params">Диаметр 15 см, высота 10 см</p>
             <span class="catalog__price">690 руб.</span>
             <a class="catalog__order"><span class="visuall-hidden">Купить</span></a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-            <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+            <a class="catalog__item--link" href="#">
+              <img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+            </a>
             <p class="catalog__params">Диаметр 30см, высота 30 см</p>
             <span class="catalog__price">1500 руб.</span>
             <a class="catalog__order"><span class="visuall-hidden">Купить</span></a>
@@ -80,11 +80,17 @@
 
     <footer class="page-footer">
       <ul class="social__list">
-        <li class="social__item social__item--instagramm">Instagramm</li>
-        <li class="social__item social__item--facebook">Facebbok</li>
-        <li class="social__item social__item--twitter">Twitter</li>
+        <li class="social__item">
+          <a class="social__link social__link--instagramm">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook">Facebbok</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter">Twitter</a>
+        </li>
       </ul>
-      <div class="developer">
+      <div class="page-footer__developer developer">
         <p class="developer__title">Разработано</p>
         <div class="developer__logo"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></div>
       </div>

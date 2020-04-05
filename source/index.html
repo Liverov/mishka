@@ -10,9 +10,8 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/mobile-logotype.svg" width="86" height="35" alt="Интернет-магазин вещей ручной работы - Мишка" />
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -22,15 +21,15 @@
           </li>
         </ul>
 
-        <form class="site-list__item site-list__item--search" action="https://echo.htmlacademy.ru">
-          <input type="text" name="" id="" placeholder="Поиск по сайту">
-        </form>
+        <ul class="main-nav__search search-list">
+          <li class="search-list__item search-list__item--icon">
+            <a href="#">Поиск по сайту</a>
+          </li>
+        </ul>
 
-        <div class="site-list__item site-list__item--cart">
+        <div class="main-nav__cart">
             <a href="#">Корзина: пока пуста</a>
         </div>
-
-
       </nav>
     </header>
 
@@ -100,14 +99,14 @@
             <address class="reviews__author-address">@misssssiskras</address>
           </blockquote>
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <div class="slider">
           <button class="slider__toggle slider__toggle--back" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
           <button class="slider__toggle slider__toggle--next" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
-        </p>
+        </div>
         <a class="reviews__write button" href="#">Написать</a>
       </section>
 
@@ -135,10 +134,16 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--instagramm">Instagramm</li>
-        <li class="social__item social__item--facebook">Facebbok</li>
-        <li class="social__item social__item--twitter">Twitter</li>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagramm">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook">Facebbok</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter">Twitter</a>
+        </li>
       </ul>
       <div class="page-footer__developer developer">
         <p class="developer__title">Разработано</p>
