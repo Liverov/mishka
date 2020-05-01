@@ -1,5 +1,6 @@
 .product {
-  padding: @main-padding;
+  position: relative;
+  padding: 30px 30px 45px 30px;
 }
 
 .product__title {
@@ -47,4 +48,18 @@
   font-weight: 700;
   color: @greyish-brow;
   text-align: center;
+}
+
+.product::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 6px;
+
+  content: "";
+
+  background-image: url("../img/zigzag-line-desktop-svg.svg");
+  background-size: cover;
 }
