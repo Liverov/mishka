@@ -4,7 +4,11 @@
 }
 
 .product__title {
+  .reset-spacing();
+
   color: @black;
+  font-weight: 700;
+  font-size: @base-h2-size;
 }
 
 .product__subtitle {
@@ -17,13 +21,20 @@
 }
 
 .product__description {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: @base-font-size - 1;
 }
 
 .product__params {
+  width: 100%;
   margin-bottom: 30px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .product__params tr {
@@ -42,6 +53,7 @@
 }
 
 .product__price {
+  .reset-spacing();
   margin-bottom: 25px;
 
   font-size: 17px;

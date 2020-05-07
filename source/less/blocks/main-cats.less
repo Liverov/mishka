@@ -5,6 +5,8 @@
 .main-cats__list {
   display: flex;
   flex-direction: column;
+
+  .reset-spacing();
 }
 
 .main-cats__item {
@@ -21,17 +23,15 @@
 
 .main-cats__link {
   max-width: 230px;
+  min-height: 103px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: @main-padding;
-  padding-right: @main-padding;
+  padding: 27px;
 
   display: block;
 
   font-size: 19px;
   font-weight: 700;
-  line-height: @base-line-height * 1.26;
+  line-height: @base-line-height;
   color: #ffffff;
 }
 
