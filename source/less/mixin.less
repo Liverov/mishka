@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

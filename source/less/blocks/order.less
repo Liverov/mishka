@@ -1,9 +1,9 @@
-.filter {
+.order__fieldset {
   padding: 0;
   border: none;
 }
 
-.filter__title {
+.order__title {
   position: relative;
   margin-bottom: 25px;
 
@@ -13,7 +13,7 @@
   text-transform: uppercase;
 }
 
-.filter__title::after {
+.order__title::after {
   position: absolute;
 
   left: 62px;
@@ -25,12 +25,17 @@
   background-color: @seafoam-blue;
 }
 
-.filter__option {
+.order__options {
+  .reset-spacing();
+  list-style: none;
+}
+
+.order__option {
   margin-bottom: 20px;
   min-height: 40px;
 }
 
-.filter__option label {
+.order__option label {
   position: relative;
   display: block;
 
@@ -47,11 +52,11 @@
 
 
 /*  FILTER TYPE */
-.filter__type {
+.order__type {
   margin-bottom: 30px;
 }
 
-.filter__radio + label::before {
+.order__radio + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -64,16 +69,16 @@
   border-radius: 50%;
 }
 
-// .filter__radio:hover + label::before {
+// .order__radio:hover + label::before {
 //   border: 4px solid rgb(0, 0, 0);
 // }
 
-// .filter__radio:focus + label::before {
+// .order__radio:focus + label::before {
 //   border: 4px solid rgb(0, 0, 0);
 //   outline: rgb(113, 157, 206) solid 2px;
 // }
 
-.filter__radio:checked + label::after {
+.order__radio:checked + label::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -86,17 +91,17 @@
   border-radius: 50%;
 }
 
-.filter__radio:checked:hover + label::after {
+.order__radio:checked:hover + label::after {
   background-color: @seafoam-blue-two;
 }
 
 
 /* FILTER COLORS */
-.filter__colors {
+.order__colors {
   margin-bottom: 15px;
 }
 
-.filter__checkbox + label::before {
+.order__checkbox + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -108,16 +113,16 @@
   border: 2px solid @greyish-brow;
 }
 
-.filter__checkbox:hover + label::before {
+.order__checkbox:hover + label::before {
   border: 2px solid @greyish-brow;
 }
 
-.filter__checkbox:checked:focus + label::after,
-.filter__checkbox:focus + label::before {
+.order__checkbox:checked:focus + label::after,
+.order__checkbox:focus + label::before {
   outline: rgb(113, 157, 206) solid 2px;
 }
 
-.filter__checkbox:checked + label::after {
+.order__checkbox:checked + label::after {
   content: "";
 
   position: absolute;
@@ -134,49 +139,60 @@
   opacity: 0.8;
 }
 
-.filter__checkbox:checked + label:hover::after {
+.order__checkbox:checked + label:hover::after {
   opacity: 1;
 }
 
 /* FILTER PERSONAL */
-.filter__personal label {
+.order__personal label {
   padding-left: 0;
 
   font-size: 17px;
   font-weight: 700;
 }
 
-/* FILTER TEL */
-.filter__tel {
+/* FILTER TEL & EMAIL */
+.order__contacts {
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
-.filter__tel .filter__title,
-.filter__email .filter__title {
+.order__contacts .order__title {
   margin-bottom: 0;
   padding: 0;
 }
 
-.filter__telephone--icon {
+.order__title--email {
+  margin-top: 30px;
+}
+
+.order__telephone--icon {
   background-image: url("../img/phone-svg.png");
   background-repeat: no-repeat;
   background-position: center right;
 }
 
-.filter__email--icon {
-  background-image: url("../img/mail-svg.png");
-  background-repeat: no-repeat;
-  background-position: center right;
+.order__tel-label,
+.order__email-label {
+  position: relative;
+}
+
+.order__telephone--icon,
+.order__email--icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  opacity: 0.2;
 }
 
 /* FILTER EMAIL */
-.filter__email {
+.order__email {
   margin-bottom: 25px;
 }
 
 /* FILTER MORE */
-.filter__more-field {
+.order__more-field {
   width: 100%;
   padding: 15px;
 
@@ -186,13 +202,13 @@
   background-color: @white;
 }
 
-.filter__fieldsinfo {
+.order__fieldsinfo {
   margin-bottom: 30px;
   font-size: 14px;
   color: @base-text-color;
 }
 
-.filter__submit {
+.order__submit {
   min-width: 260px;
   padding: 15px 0;
   margin-bottom: 55px;
