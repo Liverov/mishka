@@ -1,0 +1,77 @@
+.product {
+  position: relative;
+  padding: 30px 30px 45px 30px;
+}
+
+.product__title {
+  .reset-spacing();
+
+  color: @black;
+  font-weight: 700;
+  font-size: @base-h2-size;
+}
+
+.product__subtitle {
+  .reset-spacing();
+  margin-top: 6px;
+
+  font-weight: 700;
+  color: @seafoam-blue;
+  text-transform: uppercase;
+}
+
+.product__description {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: @base-font-size - 1;
+}
+
+.product__params {
+  width: 100%;
+  margin-bottom: 30px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.product__params tr {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product__params td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  font-size: @base-font-size - 1;
+}
+
+.product__image {
+  margin-bottom: 25px;
+}
+
+.product__price {
+  .reset-spacing();
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  font-weight: 700;
+  color: @greyish-brow;
+  text-align: center;
+}
+
+.product::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 6px;
+
+  content: "";
+
+  background-image: url("../img/zigzag-line-desktop-svg.svg");
+  background-size: cover;
+}

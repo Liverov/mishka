@@ -1,0 +1,55 @@
+.main-cats {
+  margin-top: -80px;
+}
+
+.main-cats__list {
+  display: flex;
+  flex-direction: column;
+
+  .reset-spacing();
+}
+
+.main-cats__item {
+  position: relative;
+}
+
+.main-cats__item:nth-child(odd) {
+  background-color: @seafoam-blue;
+}
+
+.main-cats__item:nth-child(even) {
+  background-color: @greeny-blue;
+}
+
+.main-cats__link {
+  max-width: 230px;
+  min-height: 103px;
+
+  padding: 27px;
+
+  display: block;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: @base-line-height;
+  color: #ffffff;
+}
+
+.main-cats__link svg {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.main-cats__link--interior {
+  position: absolute;
+
+  right: 36px;
+  top: 23px;
+}
+
+.main-cats__link--toys {
+  position: absolute;
+
+  right: 27px;
+  top: 21px;
+}
