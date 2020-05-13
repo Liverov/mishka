@@ -1,6 +1,5 @@
 .product {
   position: relative;
-  padding: 30px 30px 45px 30px;
 }
 
 .product__title {
@@ -49,7 +48,8 @@
 }
 
 .product__image {
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
+  display: block;
 }
 
 .product__price {
@@ -63,12 +63,10 @@
 }
 
 .product::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  width: 100%;
+  width: 320px;
   height: 6px;
+  margin: auto;
+  display: block;
 
   content: "";
 
