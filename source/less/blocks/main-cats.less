@@ -4,12 +4,47 @@
   margin-top: -80px;
 }
 
+.main-cats .container {
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-cats {
+    position: relative;
+    width: 768px;
+    margin-top: -120px;
+  }
+
+  .main-cats::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+
+    content: "";
+    display: block;
+    background-image: url("../img/zigzag-fill-desktop-svg.svg");
+    background-size: cover;
+  }
+
+  .main-cats .container {
+    padding: 0 50px;
+  }
+}
+
 .main-cats__list {
   display: flex;
   flex-direction: column;
 
   .reset-spacing();
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-cats__list {
+    flex-direction: row;
+  }
 }
 
 .main-cats__item {
@@ -24,6 +59,12 @@
   background-color: @greeny-blue;
 }
 
+@media (min-width: @tablet-width) {
+  .main-cats__item {
+    width: 50%;
+  }
+}
+
 .main-cats__link {
   max-width: 230px;
   min-height: 103px;
@@ -36,6 +77,12 @@
   font-weight: 700;
   line-height: @base-line-height;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-cats__link {
+    padding: 35px;
+  }
 }
 
 .main-cats__link svg {
@@ -55,4 +102,11 @@
 
   right: 27px;
   top: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-cats__link--interior,
+  .main-cats__link--toys {
+    top: 30px;
+  }
 }

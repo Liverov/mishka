@@ -6,6 +6,17 @@
   line-height: @base-line-height + 6px;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin-top: 40px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .contacts__title {
   .reset-spacing();
   margin-bottom: 30px;
@@ -15,10 +26,46 @@
   line-height: @base-line-height + 6px;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    position: relative;
+    flex-basis: 768px;
+    margin-bottom: 60px;
+
+    font-size: 43px;
+  }
+
+  .contacts__title::after {
+    position: absolute;
+    right: 0;
+    top: -25px;
+
+    width: 47px;
+    height: 81px;
+
+    content: "";
+    display: block;
+
+    background-image: url("../img/flag-svg.png");
+  }
+}
+
 .contacts-block {
   display: flex;
 
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-block {
+    flex-basis: 50%;
+
+    font-size: 17px;
+  }
+
+  .contacts__address {
+    padding-left: 20px;
+  }
 }
 
 .contacts__label {
@@ -27,6 +74,12 @@
 
 .contacts__value {
   max-width: 150px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__value {
+    max-width: 200px;
+  }
 }
 
 .contacts__value--underline {
@@ -40,6 +93,13 @@
   margin-top: -30px;
 
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__button {

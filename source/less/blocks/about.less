@@ -1,8 +1,22 @@
-.about-title {
+@media (min-width: @tablet-width) {
+  .about {
+    margin-bottom: 80px;
+  }
+}
+
+.about__title {
   .reset-spacing();
 
   color: @black;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .about__title {
+    margin-top: 60px;
+
+    font-size: 43px;
+  }
 }
 
 .about-list {
@@ -17,6 +31,21 @@
   font-size: @base-font-size + 1px;
   font-weight: 700;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+  }
+
+  .about-list__item {
+    flex-basis: 50%;
+    padding-right: 85px;
+    padding-top: 25px;
+  }
 }
 
 .about-list__item::before {
@@ -73,4 +102,30 @@
 
   background-image: url("../img/icon-feature-gift.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .about-list__item--icon-flower {
+    order: 1;
+  }
+
+  .about-list__item--icon-ball {
+    order: 2;
+  }
+
+  .about-list__item--icon-money {
+    order: 3;
+  }
+
+  .about-list__item--icon-rocket {
+    order: 4;
+  }
+
+  .about-list__item--icon-heart {
+    order: 5;
+  }
+
+  .about-list__item--icon-gift {
+    order: 6;
+  }
 }
