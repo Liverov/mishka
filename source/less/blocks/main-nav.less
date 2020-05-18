@@ -51,6 +51,23 @@
   background-image: url("../img/icon-menu-close.svg");
 }
 
+.main-nav__list,
+.main-nav__search,
+.main-nav__cart {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__search,
+  .main-nav__cart {
+    display: block;
+  }
+}
+
 .page-header__main-nav a {
   width: 320px;
   display: block;
