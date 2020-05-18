@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.product__wrapper {
+  margin-bottom: 35px;
+}
+
 .product__title {
   .reset-spacing();
 
@@ -25,7 +29,14 @@
   }
 
   .product__title {
+    padding-right: 75px;
+
+    max-width: 520px;
+    overflow: hidden;
+
     font-size: 43px;
+    word-wrap: break-word;
+    line-height: 45px;
   }
 }
 
@@ -66,8 +77,12 @@
   font-size: @base-font-size - 1;
 }
 
+.product__field {
+  min-width: 82px;
+}
+
 .product__image {
-  margin: 0 auto 25px auto;
+  margin: 0 auto 19px auto;
   display: block;
 }
 
@@ -105,7 +120,7 @@
   }
 
   .product__params {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
   .product__price {

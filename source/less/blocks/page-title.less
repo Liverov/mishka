@@ -10,7 +10,7 @@
 .page-title__homepage {
   height: 373px;
 
-  padding-top: 83px;
+  padding-top: 70px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
@@ -18,7 +18,7 @@
   background-image: url("../img/hero-desktop-jpg.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: -10px;
+  background-position-y: -18px;
   background-size: cover;
 }
 
@@ -26,17 +26,18 @@
   .page-title__homepage {
     height: 746px;
     background-image: url("../img/hero-desktop-jpg@2x.png");
-    background-position-y: 0;
   }
 }
 
 .page-title__text {
-  .reset-spacing();
+  max-width: 320px;
+  padding: 0;
+  margin: 0 auto;
 
   color: @black;
   font-weight: 700;
   font-size: @base-h1-size;
-  line-height: @base-line-height;
+  line-height: 30px;
 }
 
 @media (min-width: @tablet-width) {

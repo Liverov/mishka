@@ -1,18 +1,14 @@
 .page-header {
-  width: 320px;
-  margin: auto;
-
   position: relative;
 
   display: flex;
   flex-direction: column;
-
-  border-bottom: 1px solid #ececec;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     width: 768px;
+    height: 149px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -21,17 +17,23 @@
 
     padding-right: 50px;
     padding-left: 50px;
+    margin: auto;
+
+    border-bottom: 0;
   }
 }
 
 .page-header__logo {
-  padding: 20px 30px;
+  width: 88px;
+  padding-top: 21px;
+  padding-bottom: 16px;
   margin: auto;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    padding: 20px 0px;
+    padding: 20px 0;
   }
 }
 
