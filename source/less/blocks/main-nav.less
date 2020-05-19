@@ -1,3 +1,11 @@
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__wrapper--opened {
+  display: block;
+}
+
 .main-nav__list {
   .reset-spacing();
   list-style: none;
@@ -6,20 +14,6 @@
 .site-list__item,
 .main-nav__search {
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-}
-
-
-@media (min-width: @tablet-width) {
-  .page-header__main-nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-nav__list {
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .main-nav__toggle {
@@ -33,12 +27,6 @@
   background-color: transparent;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
 .main-nav__toggle--open {
   width: 20px;
   height: 14px;
@@ -49,23 +37,6 @@
   width: 21px;
   height: 20px;
   background-image: url("../img/icon-menu-close.svg");
-}
-
-.main-nav__list,
-.main-nav__search,
-.main-nav__cart {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav__list {
-    display: flex;
-  }
-
-  .main-nav__search,
-  .main-nav__cart {
-    display: block;
-  }
 }
 
 .page-header__main-nav a {
@@ -88,7 +59,39 @@
   position: relative;
 }
 
+.main-nav__search--icon,
+.main-nav__cart--icon {
+  position: absolute;
+  left: 35px;
+  top: 34px;
+
+  opacity: 0.2;
+}
+
+.main-nav__cart--icon {
+  top: 33px;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .main-nav__list {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .main-nav__search {
     order: 1;
     margin-left: auto;
@@ -99,6 +102,7 @@
 
   .main-nav__cart {
     order: 2;
+    border-left: 1px solid #ececec;
   }
 
   .page-header__main-nav a {
@@ -128,36 +132,11 @@
   .main-nav__search {
     box-shadow: none;
   }
-}
 
-.main-nav__search--icon,
-.main-nav__cart--icon {
-  position: absolute;
-  left: 35px;
-  top: 34px;
-
-  opacity: 0.2;
-}
-
-.main-nav__cart--icon {
-  top: 33px;
-}
-
-@media (min-width: @tablet-width) {
   .main-nav__search--text {
     display: none;
   }
 
-  .main-nav__cart {
-    border-left: 1px solid #ececec;
-  }
-}
-
-.main-nav__delivery {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
   .main-nav__delivery {
     position: absolute;
     right: 50px;

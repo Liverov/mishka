@@ -19,23 +19,14 @@ Array.prototype.forEach.call(cards, function (card) {
 });
 
 /* TOGGLE MENU */
-var main_nav_toggle = document.querySelector(".main-nav__toggle");
 var button_open = document.querySelector(".main-nav__toggle--open");
-var button_close = document.querySelector(".main-nav__toggle--close");
+var main_nav_toggle = document.querySelector(".main-nav__toggle");
 var main_nav_list = document.querySelector(".main-nav__list");
-var main_nav_search = document.querySelector(".main-nav__search");
-var main_nav_cart = document.querySelector(".main-nav__cart");
+var main_nav_wrapper = document.querySelector(".main-nav__wrapper");
 
 button_open.addEventListener("click", function(e) {
-    main_nav_list.classList.add("show-block");
-    main_nav_search.classList.add("show-block");
-    main_nav_cart.classList.add("show-block");
-    main_nav_toggle.classList.toggle("main-nav__toggle--open");
-    main_nav_toggle.classList.toggle("main-nav__toggle--close");
-
-    if(main_nav_toggle.classList.contains("main-nav__toggle--open")) {
-      main_nav_list.classList.remove("show-block");
-      main_nav_search.classList.remove("show-block");
-      main_nav_cart.classList.remove("show-block");
-    }
+  main_nav_wrapper.classList.toggle("main-nav__wrapper");
+  main_nav_wrapper.classList.toggle("main-nav__wrapper--opened");
+  main_nav_toggle.classList.toggle("main-nav__toggle--open");
+  main_nav_toggle.classList.toggle("main-nav__toggle--close");
 });
