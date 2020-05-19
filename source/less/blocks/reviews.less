@@ -3,20 +3,6 @@
   margin-bottom: 45px;
 }
 
-@media (min-width: @tablet-width) {
-  .reviews__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    min-height: 457px;
-
-    background-image: url("../img/review.png");
-    background-repeat: no-repeat;
-  }
-}
-
 .reviews__title {
   .reset-spacing();
   margin-bottom: 27px;
@@ -25,22 +11,6 @@
   color: @black;
   font-size: @base-h2-size;
   font-weight: 700;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__title {
-    margin-top: 45px;
-    margin-bottom: 60px;
-    padding-right: 75px;
-
-    max-width: 490px;
-
-    overflow: hidden;
-
-    word-wrap: break-word;
-    font-size: 43px;
-    line-height: 45px;
-  }
 }
 
 .reviews__item {
@@ -53,13 +23,6 @@
 
   font-size: @base-font-size - 1px;
   line-height: 30px;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__text {
-    font-size: 17px;
-    line-height: 30px;
-  }
 }
 
 .reviews__author-name {
@@ -97,15 +60,44 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    min-height: 457px;
+
+    background-image: url("../img/review.png");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__title {
+    order: 1;
+
+    margin-top: 45px;
+    margin-bottom: 60px;
+    padding-right: 75px;
+
+    max-width: 490px;
+
+    overflow: hidden;
+
+    word-wrap: break-word;
+    font-size: 43px;
+    line-height: 45px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .reviews::after {
     width: 768px;
     height: 15px;
 
     margin-top: 70px;
-  }
-
-  .reviews__title {
-    order: 1;
   }
 
   .reviews__write {
@@ -124,5 +116,25 @@
 
     margin-left: auto;
     margin-top: -95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    padding-left: 225px;
+
+    background-position-x: 50px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews::after {
+    margin-top: 73px;
+
+    width: 1050px;
+    height: 23px;
   }
 }

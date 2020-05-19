@@ -22,13 +22,6 @@
   background-size: cover;
 }
 
-@media (min-width: @tablet-width) {
-  .page-title__homepage {
-    height: 746px;
-    background-image: url("../img/hero-desktop-jpg@2x.png");
-  }
-}
-
 .page-title__text {
   max-width: 320px;
   padding: 0;
@@ -41,6 +34,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-title__homepage {
+    height: 746px;
+    background-image: url("../img/hero-desktop-jpg@2x.png");
+  }
+
   .page-title__text {
     max-width: 500px;
     margin: auto;
@@ -48,5 +46,20 @@
 
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title__homepage {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-title__text {
+    max-width: 700px;
+
+    line-height: 57px;
+    font-size: 53px;
   }
 }

@@ -10,17 +10,6 @@
   margin-bottom: 45px;
 }
 
-@media (min-width: @tablet-width) {
-  .contacts {
-    margin-top: 20px;
-  }
-
-  .contacts__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .contacts__title {
   .reset-spacing();
   margin-bottom: 26px;
@@ -31,7 +20,50 @@
   line-height: @base-line-height + 6px;
 }
 
+.contacts-block {
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.contacts__label {
+  margin-right: 30px;
+}
+
+.contacts__value {
+  max-width: 150px;
+}
+
+.contacts__value--underline {
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid @seafoam-blue;
+}
+
+.contacts__map {
+  width: 100%;
+  margin-top: 7px;
+
+  border: none;
+}
+
+.contacts__button {
+  margin-top: 39px;
+  margin-bottom: 9px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
 @media (min-width: @tablet-width) {
+  .contacts {
+    margin-top: 20px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .contacts__title {
     position: relative;
     margin-bottom: 60px;
@@ -61,15 +93,7 @@
 
     background-image: url("../img/flag-svg.png");
   }
-}
 
-.contacts-block {
-  display: flex;
-
-  margin-bottom: 30px;
-}
-
-@media (min-width: @tablet-width) {
   .contacts-block {
     flex-basis: 50%;
 
@@ -79,36 +103,11 @@
   .contacts__address {
     padding-left: 20px;
   }
-}
 
-.contacts__label {
-  margin-right: 30px;
-}
-
-.contacts__value {
-  max-width: 150px;
-}
-
-@media (min-width: @tablet-width) {
   .contacts__value {
     max-width: 200px;
   }
-}
 
-.contacts__value--underline {
-  padding-bottom: 5px;
-
-  border-bottom: 1px solid @seafoam-blue;
-}
-
-.contacts__map {
-  width: 100%;
-  margin-top: 7px;
-
-  border: none;
-}
-
-@media (min-width: @tablet-width) {
   .contacts__map {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -117,9 +116,66 @@
   }
 }
 
-.contacts__button {
-  margin-top: 39px;
-  margin-bottom: 9px;
-  padding-bottom: 9px;
-  padding-top: 9px;
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+    width: 1050px;
+    margin: 41px auto 0 auto;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+
+    padding-left: 80px;
+    width: 400px;
+  }
+
+  .contacts__title {
+    min-width: 200px;
+    padding-left: 111px;
+    margin-bottom: 30px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__title::after {
+    content: none;
+  }
+
+  .contacts__title::before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+
+    width: 47px;
+    height: 81px;
+
+    content: "";
+    display: block;
+
+    background-image: url("../img/flag-svg.png");
+  }
+
+  .contacts__email,
+  .contacts__address {
+    margin-left: 100px;
+  }
+
+  .contacts__address {
+    padding-left: 0;
+  }
+
+  .contacts__map {
+    position: absolute;
+    right: 0;
+
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin: 45px 0 0 190px;
+  }
 }
