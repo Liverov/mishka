@@ -4,6 +4,8 @@
 
 .about__title {
   .reset-spacing();
+  padding-top: 1px;
+  margin-left: -3px;
 
   color: @black;
   font-weight: 700;
@@ -33,7 +35,7 @@
   width: 32px;
   height: 37px;
 
-  margin-top: 36px;
+  margin-top: 35px;
   margin-left: 8px;
   margin-bottom: 15px;
 
@@ -46,7 +48,6 @@
   height: 28px;
 
   margin-top: 28px;
-  margin-left: 1px;
   margin-bottom: 24px;
 
   background-image: url("../img/icon-feature-money.svg");
@@ -103,7 +104,7 @@
 
 @media (min-width: @tablet-width) {
   .about {
-    margin-bottom: 87px;
+    margin-bottom: 82px;
   }
 
   .about__title {
@@ -178,20 +179,27 @@
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    margin-bottom: 90px;
+  }
+
   .about__wrapper {
     padding-left: 225px;
   }
 
   .about__title {
+    margin-top: 30px;
     font-size: 53px;
-    line-height: 57px;
+    line-height: 55px;
   }
 
   .about-list {
     width: 710px;
+    margin-top: -3px;
   }
 
   .about-list__item {
+    flex-basis: 350px;
     font-size: 20px;
     line-height: 22px;
   }
