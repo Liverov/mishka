@@ -34,7 +34,7 @@
   max-width: 150px;
 }
 
-.contacts__value--underline {
+.contacts__value a {
   padding-bottom: 5px;
 
   border-bottom: 1px solid @seafoam-blue;
@@ -128,6 +128,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__wrapper.container {
+    width: auto;
+    padding: 0;
+  }
+
   .contacts {
     position: relative;
     width: 1050px;
@@ -143,9 +148,9 @@
 
   .contacts__title {
     min-width: 200px;
-    padding-left: 106px;
     margin-bottom: 30px;
-    padding-top: 72px;
+    padding-top: 94px;
+    padding-left: 175px;
 
     font-size: 53px;
     line-height: 57px;
@@ -157,8 +162,8 @@
 
   .contacts__title::before {
     position: absolute;
-    left: 0;
-    top: 65px;
+    left: 68px;
+    top: 87px;
 
     width: 47px;
     height: 81px;
@@ -171,7 +176,7 @@
 
   .contacts__email,
   .contacts__address {
-    margin-left: 106px;
+    margin-left: 174px;
   }
 
   .contacts__address {
