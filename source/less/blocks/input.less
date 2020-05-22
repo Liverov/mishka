@@ -11,8 +11,15 @@
   box-shadow: inset 0 -2px 0 0 @black;
 }
 
-.input__text::placeholder,
-.filter__more-field::placeholder {
+.input__text::placeholder {
   font-size: 17px;
   color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .input__text::placeholder {
+    padding-left: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+  }
 }
