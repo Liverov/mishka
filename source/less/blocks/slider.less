@@ -2,12 +2,20 @@
   display: flex;
 }
 
-.slider__toggle {
+.reviews__navigation-toggle {
   width: 50%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  padding-left: 1px;
 
   background-color: @white;
   border: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__navigation-toggle {
+    padding-top: 13px;
+    padding-left: 31px;
+    border: none;
+  }
 }
