@@ -8,6 +8,7 @@
 }
 
 .page-title__homepage {
+  width: 320px;
   height: 373px;
 
   padding-top: 70px;
@@ -23,7 +24,6 @@
 }
 
 .page-title__text {
-  max-width: 320px;
   padding: 0;
   margin: 0 auto;
 
@@ -35,20 +35,20 @@
 
 @media (min-width: @tablet-width) {
   .page-title {
-    padding-top: 92px;
-    padding-bottom: 84px;
+    padding-top: 95px;
+    padding-bottom: 80px;
   }
 
   .page-title__homepage {
     padding-top: 153px;
-    max-width: 1150px;
+    width: 768px;
     height: 746px;
     background-image: url("../img/hero-desktop-jpg@2x.png");
     background-position-y: 0;
   }
 
   .page-title__text {
-    max-width: 500px;
+    width: 500px;
     margin: auto;
 
     font-size: 43px;
@@ -58,19 +58,22 @@
 
 @media (min-width: @desktop-width) {
   .page-title__homepage {
+    width: 1150px;
     padding-top: 70px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   .page-title__text {
-    max-width: 700px;
+    width: 700px;
+    padding-top: 83px;
 
     line-height: 57px;
     font-size: 53px;
   }
 
   .page-title {
-    padding-bottom: 100px;
+    padding-bottom: 97px;
+    padding-top: 11px;
   }
 }

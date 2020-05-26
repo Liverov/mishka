@@ -73,20 +73,25 @@
 
   </header>
 
-    <main class="page-main page-main--catalog">
+    <main class="page-main page-main__catalog">
 
       <div class="page-title">
         <h1 class="page-title__text">Каталог товаров</h1>
       </div>
 
       <section class="catalog">
-        <div class="section-class__wrapper container">
+        <div class="catalog__wrapper container">
 
         <h2 class="visually-hidden">Карточки наших товаров</h2>
 
-        <ul class="catalog__list card">
-          <li class="catalog__item">
-            <img class="catalog__image" src="img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+        <ul class="catalog__list">
+          <li class="catalog__item card">
+            <picture>
+              <source srcset="img/photo-1-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/photo-1-desktop.png" media="(min-width: 1150px)">
+              <img class="catalog__image" src="img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+
             <h3 class="catalog__title">
               <a class="catalog__item--link" href="#">Зайчик-попрыгайчик</a>
             </h3>
@@ -101,7 +106,12 @@
           </li>
 
           <li class="catalog__item card">
-            <img class="catalog__image" src="img/photo-2-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source srcset="img/photo-2-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/photo-2-desktop.png" media="(min-width: 1150px)">
+              <img class="catalog__image" src="img/photo-2-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+
             <h3 class="catalog__title">
               <a class="catalog__item--link" href="#">Корзинка для белья</a>
             </h3>
@@ -117,7 +127,11 @@
           </li>
 
           <li class="catalog__item card">
-            <img class="catalog__image" src="img/photo-3-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source srcset="img/photo-3-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/photo-3-desktop.png" media="(min-width: 1150px)">
+                <img class="catalog__image" src="img/photo-3-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
             <h3 class="catalog__title">
               <a class="catalog__item--link" href="#">Большая корзинка для игрушек</a>
             </h3>
@@ -135,7 +149,7 @@
       </section>
 
       <section class="process">
-        <div class="section-class__wrapper container">
+        <div class="process__wrapper container">
         <h2 class="visually-hidden">Процесс создания наших товаров</h2>
         <ul class="process__list">
           <li class="process__item">
@@ -163,7 +177,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__catalog">
       <div class="page-footer__wrapper container">
         <img class="page-footer__logo" src="img/logo-footer-svg.png" width="102" height="34" alt="Интернет-магазин Мишка">
         <ul class="page-footer__social-list social-list">
