@@ -29,6 +29,15 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a:hover,
+a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .container {
   width: 320px;
   padding-top: 30px;
@@ -53,7 +62,7 @@ a {
   }
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;

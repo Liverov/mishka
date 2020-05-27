@@ -2,9 +2,11 @@
   width: 100%;
 
   padding-left: 0;
-  padding-right: 30px;
-  padding-top: 18px;
+  padding-right: 0;
+  padding-top: 21px;
   padding-bottom: 17px;
+
+  color: #444444;
 
   background-color: #ffffff;
   border: none;
@@ -16,10 +18,24 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
+.input__text:hover,
+.input__text:focus,
+.input__text:active {
+  box-shadow: inset 0 -2px 0 0 #62d1ba;
+  outline: none;
+}
+
+
 @media (min-width: @tablet-width) {
-  .input__text::placeholder {
-    padding-left: 17px;
+  .input__text {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 16px;
     padding-bottom: 17px;
-    font-size: 20px;
+    font-size: 19px;
+  }
+
+  .input__text::placeholder {
+    font-size: 19px;
   }
 }

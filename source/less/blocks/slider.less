@@ -10,6 +10,20 @@
 
   background-color: @white;
   border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+.reviews__navigation-toggle:focus {
+  outline: none;
+}
+
+.reviews__navigation-toggle:hover svg,
+.reviews__navigation-toggle:focus svg {
+  opacity: 0.6;
+}
+
+.reviews__navigation-toggle:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
