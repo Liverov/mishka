@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font"  crossorigin>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>HTML Academy: Мишка</title>
@@ -96,7 +98,7 @@
               <a class="catalog__item-link" href="#">Зайчик-попрыгайчик</a>
             </h3>
             <p class="catalog__params">Рост 30 см, вес 200 г</p>
-            <a class="catalog__order">
+            <p class="catalog__order">
               <span class="catalog__price">1 200 руб.</span>
               <button class="catalog__button">
                 <svg width="20" height="19">
@@ -104,7 +106,7 @@
                 </svg>
                 <span class="visually-hidden">Купить</span>
               </button>
-            </a>
+            </p>
           </li>
 
           <li class="catalog__item card">
@@ -122,7 +124,7 @@
             </h3>
             <p class="catalog__params">Диаметр 15 см, высота 10 см</p>
 
-            <a class="catalog__order">
+            <p class="catalog__order">
               <span class="catalog__price">690 руб.</span>
               <button class="catalog__button">
                 <svg width="20" height="19">
@@ -130,7 +132,7 @@
                 </svg>
                 <span class="visually-hidden">Купить</span>
               </button>
-            </a>
+            </p>
           </li>
 
           <li class="catalog__item card">
@@ -147,7 +149,7 @@
               <a class="catalog__item-link" href="#">Большая корзинка для игрушек</a>
             </h3>
             <p class="catalog__params">Диаметр 30см, высота 30 см</p>
-            <a class="catalog__order">
+            <p class="catalog__order">
               <span class="catalog__price">1500 руб.</span>
               <button class="catalog__button">
                 <svg width="20" height="19">
@@ -155,7 +157,7 @@
                 </svg>
                 <span class="visually-hidden">Купить</span>
               </button>
-            </a>
+            </p>
           </li>
         </ul>
         </div>
@@ -171,9 +173,9 @@
               <span class="process__title-text">Процесс производства</span>
             </h3>
             <div class="process__video process__video-thumb">
-              <svg width="101" height="77">
-                <use xlink:href="#icon-play"></use>
-              </svg>
+              <button class="process__video-play" type="button">
+                <svg width="101" height="77"><use xlink:href="#icon-play"></use></svg>
+              </button>
             </div>
             <p class="process__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -189,9 +191,9 @@
     <footer class="page-footer page-footer__catalog">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-        <svg width="102" height="34">
-          <use xlink:href="#icon-logo-footer"></use>
-        </svg>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <svg width="102" height="34"><use xlink:href="#icon-logo-footer"></use></svg>
+          </a>
         </div>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
@@ -220,7 +222,7 @@
           </li>
         </ul>
         <div class="page-footer__developer developer">
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <p class="developer__title">Разработано</p>
             <svg width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
@@ -231,9 +233,9 @@
       </div>
     </footer>
 
-    <section class="modal modal__order">
+    <section class="modal">
+      <form class="modal__order" action="https://echo.htmlacademy.ru" method="get">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
       <p class="modal__subtitle">Выберите размер:</p>
         <ul class="size__list">
           <li class="size__item">

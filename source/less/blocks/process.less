@@ -48,9 +48,12 @@
   font-size: 17px;
 }
 
-.process__video svg {
+.process__video-play {
   margin: 15% auto;
   display: block;
+
+  background: none;
+  border: 0;
 }
 
 .process__video-thumb {
@@ -72,13 +75,13 @@
   }
 }
 
-.process__video svg:focus,
-.process__video svg:hover {
+.process__video-play:focus,
+.process__video-play:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.process__video svg:active {
+.process__video-play:active {
   transform: scale(0.8);
   opacity: 0.3;
 }
@@ -123,7 +126,7 @@
     }
   }
 
-  .process__video svg {
+  .process__video-play {
     margin: 28% auto;
   }
 

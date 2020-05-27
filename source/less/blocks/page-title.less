@@ -7,31 +7,31 @@
   text-align: center;
 }
 
-.page-title__homepage {
-  width: 320px;
+.main-hero {
+  width: 100%;
   height: 373px;
-
-  padding-top: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: auto;
 
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: -18px;
-  background-size: cover;
+  background-position: 50% -15px;
+  background-clip: content-box;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
-.page-title__text {
-  padding: 0;
-  margin: 0 auto;
+.main-hero__title {
+  width: 270px;
 
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+
+  text-align: center;
   color: @black;
   font-weight: 700;
   font-size: @base-h1-size;
@@ -44,29 +44,29 @@
     padding-bottom: 80px;
   }
 
-  .page-title__homepage {
-    padding-top: 153px;
-    width: 768px;
+  .main-hero {
     height: 746px;
+
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position-y: 0;
+    background-position: 50% 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
-  .page-title__order {
-    padding-top: 94px;
-    padding-bottom: 81px;
-  }
-
-  .page-title__text {
-    width: 500px;
+  .main-hero__title {
+    width: 600px;
     margin: auto;
+    padding-top: 153px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-title__order {
+    padding-top: 94px;
+    padding-bottom: 81px;
   }
 }
 
@@ -76,12 +76,7 @@
     padding-top: 11px;
   }
 
-  .page-title__homepage {
-    width: 1150px;
-    padding-top: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
-
+  .main-hero {
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -89,9 +84,11 @@
     }
   }
 
-  .page-title__text {
-    width: 700px;
-    padding-top: 83px;
+  .main-hero__title {
+    width: 800px;
+    padding-top: 153px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     line-height: 57px;
     font-size: 53px;
