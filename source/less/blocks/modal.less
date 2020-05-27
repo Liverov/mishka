@@ -1,4 +1,8 @@
 .modal {
+  position: fixed;
+
+  display: none;
+
   padding: 30px;
 
   text-align: center;
@@ -7,8 +11,26 @@
   border: solid 1px #c6c6c6;
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal__order {
+  width: 320px;
+  height: 338px;
+
+  top: 50%;
+  left: 50%;
+  padding: 20px 25px;
+  margin-top: -160px;
+  margin-left: -160px;
+
+  background-color: #ffffff;
+}
+
 .modal__title {
-  margin-bottom: 10px;
+  margin: 0;
+  margin-top: 10px;
 
   line-height: 30px;
   font-weight: 700;
@@ -16,7 +38,9 @@
 }
 
 .modal__subtitle {
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
 
   line-height: 30px;
   font-size: 15px;
@@ -26,22 +50,75 @@
 .size__list {
   display: flex;
   justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 30px;
+  margin-top: 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.size__item-input {
+  display: none;
 }
 
 .size__item label {
-  padding: 13px 33px;
+  position: relative;
+  display: block;
+
+  padding-top: 13px;
+  padding-right: 33px;
+  padding-bottom: 13px;
+  padding-left: 33px;
 
   font-size: 17px;
   font-weight: 700;
 
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: #ffffff;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.size__item:focus {
+  outline: none;
+}
+
+.size__item:hover label,
+.size__item:focus label {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+  outline: none;
+}
+
+.size__item:active {
+  border: solid 2px #62d1ba;
+}
+
+.size__item:active label {
+  border: 0;
+  width: 108px;
+  height: 48px;
+}
+
+.size__item-input:checked + label {
   border: 2px solid @seafoam-blue;
 }
 
+// .order__radio:hover + label::before {
+//   border: 4px solid rgb(0, 0, 0);
+// }
+
+// .order__radio:focus + label::before {
+//   border: 4px solid rgb(0, 0, 0);
+//   outline: rgb(113, 157, 206) solid 2px;
+// }
+
 .modal__button {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 260px;
+  padding-top: 19px;
+  padding-bottom: 17px;
 
   line-height: 16px;
 
@@ -53,4 +130,42 @@
 
   border: none;
   background-color: @seafoam-blue;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__order {
+    width: 570px;
+
+    margin-left: -285px;
+    margin-top: -285px;
+  }
+
+  .modal__title {
+    margin-top: 28px;
+    font-size: 30px;
+  }
+
+  .modal__subtitle {
+    font-size: 17px;
+    margin-top: 26px;
+  }
+
+  .size__list {
+    width: 350px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    margin-bottom: 31px;
+  }
+
+  .size__item label {
+    width: 112px;
+    height: 52px;
+  }
+
+  .modal__button {
+    width: 350px;
+  }
 }

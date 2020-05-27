@@ -1,6 +1,7 @@
 .reviews__wrapper {
   position: relative;
   margin-bottom: 45px;
+  background-color: #ffffff;
 }
 
 .reviews__title {
@@ -69,8 +70,13 @@
 
     min-height: 457px;
 
-    background-image: url("../img/review.png");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {

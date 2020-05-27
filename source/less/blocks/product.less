@@ -54,6 +54,7 @@
 .product__image {
   margin: 0 auto 25px auto;
   display: block;
+  background-color: #f1f1f1;
 }
 
 .product__price {
@@ -80,10 +81,9 @@
 
 @media (min-width: @tablet-width) {
   .product::before {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    width: 100%;
+    margin: 0 auto;
+    margin-top: -12px;
+    width: 768px;
     height: 24px;
     content: "";
     display: block;
@@ -178,6 +178,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product::before {
+    width: 1050px;
+  }
+
   .product__header {
     justify-content: flex-end;
     flex-direction: row-reverse;
