@@ -48,8 +48,8 @@ gulp.task("css", function() {
         .pipe(gulp.dest("build/css"))
         .pipe(csso())
         .pipe(rename("style.min.css"))
-        .pipe(sourcemap.write("."))
-        .pipe(server.stream());
+        .pipe(gulp.dest("build/css"))
+        .pipe(sourcemap.write("."));
 });
 
 gulp.task('jsmin', async function () {
@@ -105,5 +105,5 @@ gulp.task("server", function() {
     gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "jsmin", "images", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "jsmin", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
