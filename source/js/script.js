@@ -26,6 +26,7 @@ var profile_list = document.querySelector(".profile-list");
 
 site_list.classList.remove('site-list--nojs');
 profile_list.classList.remove('profile-list--nojs');
+main_nav_toggle.classList.remove('main-nav--nojs');
 
 main_nav_toggle.addEventListener("click", function () {
 
@@ -61,18 +62,23 @@ var modal = document.querySelector(".modal");
 
 if(catalog_button || product_order) {
 
-  for(var i = 0; i < catalog_button.length; i++) {
-    catalog_button[i].addEventListener("click", function(evt) {
-      evt.preventDefault();
-      modal.classList.add("modal-show");
+  if(product_order) {
+    product_order.addEventListener("click", function(evt) {
+      if(evt.target === product_order) {
+        evt.preventDefault();
+        modal.classList.add("modal-show");
+      }
     });
   }
 
-  product_order.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.add("modal-show");
-  });
-
+  if(catalog_button) {
+    for(var i = 0; i < catalog_button.length; i++) {
+      catalog_button[i].addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modal.classList.add("modal-show");
+      });
+    }
+  }
   window.addEventListener("keydown", function(evt) {
     if(evt.keyCode === 27) {
       if(modal.classList.contains("modal-show")) {

@@ -1,3 +1,16 @@
+.profile-list__link:hover .profile-list__icon--cart,
+.profile-list__link:hover .profile-list__icon--search,
+.profile-list__link:active .profile-list__icon--cart,
+.profile-list__link:active .profile-list__icon--search {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.profile-list__link:active .profile-list__icon--cart,
+.profile-list__link:active .profile-list__icon--search {
+  opacity: 0.3;
+}
+
 .main-nav__wrapper,
 .main-nav--closed {
   position: relative;
@@ -79,6 +92,7 @@
   padding: 26px 10px 30px 75px;
   font-weight: 700;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .profile-list__link {
@@ -98,6 +112,11 @@
 }
 
 .main-nav--nojs {
+  display: none;
+}
+
+.site-list--nojs,
+.profile-list--nojs {
   display: block;
 }
 

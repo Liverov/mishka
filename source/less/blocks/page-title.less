@@ -1,10 +1,10 @@
 .page-title {
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 75px;
-
+  padding-top: 51px;
+  padding-bottom: 60px;
   background-color: #f1f1f1;
   text-align: center;
+  font-size: 14px;
 }
 
 .main-hero {
@@ -39,9 +39,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-title {
-    padding-top: 95px;
-    padding-bottom: 80px;
+  .page-title,
+  .page-title__order {
+    padding-top: 77px;
+    padding-bottom: 66px;
+    font-size: 22px;
   }
 
   .main-hero {
@@ -63,17 +65,14 @@
     font-size: 43px;
     line-height: 50px;
   }
-
-  .page-title__order {
-    padding-top: 94px;
-    padding-bottom: 81px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-title {
-    padding-bottom: 97px;
-    padding-top: 11px;
+  .page-title,
+  .page-title__order {
+    padding-bottom: 81px;
+    padding-top: 74px;
+    font-size: 26px;
   }
 
   .main-hero {
@@ -92,10 +91,5 @@
 
     line-height: 57px;
     font-size: 53px;
-  }
-
-  .page-title__order {
-    padding-bottom: 95px;
-    padding-top: 10px;
   }
 }
