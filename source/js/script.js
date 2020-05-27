@@ -69,7 +69,7 @@ if(catalog_button || product_order) {
   }
 
   product_order.addEventListener("click", function(evt) {
-     evt.preventDefault();
+    evt.preventDefault();
     modal.classList.add("modal-show");
   });
 
